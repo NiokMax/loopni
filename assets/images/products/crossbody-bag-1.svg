@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" width="800" height="1000">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F6F5F1" />
+      <stop offset="100%" stop-color="#E9E6DC" />
+    </linearGradient>
+    <linearGradient id="prodGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1F2022" />
+      <stop offset="100%" stop-color="#161718" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="125%">
+      <feDropShadow dx="0" dy="18" stdDeviation="22" flood-color="#1A1814" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+  
+  <!-- Canvas Background -->
+  <rect width="800" height="1000" fill="url(#bgGrad)" />
+  
+  <!-- Subtle Studio Grid -->
+  <line x1="60" y1="60" x2="740" y2="60" stroke="#DFDBD0" stroke-width="1" />
+  <line x1="60" y1="940" x2="740" y2="940" stroke="#DFDBD0" stroke-width="1" />
+
+  <!-- Editorial Metadata -->
+  <text x="70" y="95" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="700" letter-spacing="0.16em" fill="#8C887E">LOOPNI / COLLECTION 01</text>
+  <text x="730" y="95" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="700" letter-spacing="0.18em" fill="#8C887E" text-anchor="end">FRONT VIEW</text>
+
+  <!-- Product Silhouette Render Based on Type -->
+  <g filter="url(#shadow)">
+    
+        <!-- Crossbody Bag -->
+        <path d="M 210 240 L 590 620" stroke="#111" stroke-width="24" stroke-linecap="round" />
+        <rect x="270" y="360" width="260" height="200" rx="20" fill="url(#prodGrad)" stroke="rgba(255,255,255,0.15)" stroke-width="2.5" />
+        <line x1="290" y1="410" x2="510" y2="410" stroke="#444" stroke-width="4" stroke-linecap="round" />
+        <rect x="360" y="470" width="80" height="24" rx="4" fill="rgba(255,255,255,0.08)" />
+        <text x="400" y="486" font-family="sans-serif" font-size="11" font-weight="800" fill="#FFFFFF" text-anchor="middle" letter-spacing="0.15em">LOOPNI</text>
+      
+  </g>
+
+  <!-- Bottom Spec Tag -->
+  <rect x="70" y="875" width="660" height="50" rx="8" fill="#FFFFFF" fill-opacity="0.85" stroke="#DFDBD0" stroke-width="1" />
+  <text x="95" y="906" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="14" font-weight="700" fill="#222222" letter-spacing="0.04em">Dual zip waterproof compartments</text>
+  <text x="705" y="906" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="500" fill="#777777" text-anchor="end">Ballistic Nylon Shell</text>
+</svg>

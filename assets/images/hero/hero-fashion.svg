@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1100" width="900" height="1100">
+  <defs>
+    <linearGradient id="heroBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#EAE7DF" />
+      <stop offset="50%" stop-color="#DCD7CB" />
+      <stop offset="100%" stop-color="#CBC4B4" />
+    </linearGradient>
+    <linearGradient id="garmentGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#242424" />
+      <stop offset="100%" stop-color="#141414" />
+    </linearGradient>
+    <linearGradient id="pantGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#4B4F43" />
+      <stop offset="100%" stop-color="#34372E" />
+    </linearGradient>
+    <linearGradient id="skinTone" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#D79E78" />
+      <stop offset="100%" stop-color="#C28660" />
+    </linearGradient>
+  </defs>
+  <!-- Background Studio Setting -->
+  <rect width="900" height="1100" fill="url(#heroBg)" />
+  <rect x="0" y="920" width="900" height="180" fill="#BDB5A4" opacity="0.4" />
+  
+  <!-- Architectural Studio Lines -->
+  <line x1="140" y1="0" x2="140" y2="1100" stroke="#FFFFFF" stroke-opacity="0.25" stroke-width="2" />
+  <line x1="760" y1="0" x2="760" y2="1100" stroke="#FFFFFF" stroke-opacity="0.25" stroke-width="2" />
+  <circle cx="450" cy="520" r="320" fill="#FFFFFF" opacity="0.18" />
+
+  <!-- Shadow below model -->
+  <ellipse cx="450" cy="980" rx="220" ry="28" fill="#1C1C18" opacity="0.2" />
+
+  <!-- Human Figure & Streetwear Silhouette (Realistic Fashion Aesthetic) -->
+  <!-- Legs / Cargo Pants -->
+  <path d="M 370 580 L 335 940 L 415 940 L 440 680 L 465 680 L 490 940 L 570 940 L 530 580 Z" fill="url(#pantGrad)" />
+  <!-- Cargo Pocket Details -->
+  <rect x="330" y="690" width="55" height="75" rx="6" fill="#3D4136" stroke="#2B2F25" stroke-width="1.5" />
+  <rect x="520" y="690" width="55" height="75" rx="6" fill="#3D4136" stroke="#2B2F25" stroke-width="1.5" />
+  <path d="M 330 690 L 385 690 L 380 710 L 335 710 Z" fill="#2B2F25" />
+  <path d="M 520 690 L 575 690 L 570 710 L 525 710 Z" fill="#2B2F25" />
+  
+  <!-- Sneakers -->
+  <path d="M 320 935 Q 310 970 330 975 L 420 975 Q 430 960 415 935 Z" fill="#FBFBF9" stroke="#E5E4DE" stroke-width="2" />
+  <path d="M 485 935 Q 470 960 480 975 L 570 975 Q 590 970 580 935 Z" fill="#FBFBF9" stroke="#E5E4DE" stroke-width="2" />
+  <rect x="320" y="965" width="100" height="10" rx="3" fill="#D8D6CE" />
+  <rect x="480" y="965" width="100" height="10" rx="3" fill="#D8D6CE" />
+
+  <!-- Torso & Oversized Tee / Jacket -->
+  <path d="M 330 250 Q 450 260 570 250 L 610 430 L 535 460 L 515 360 L 525 610 L 375 610 L 385 360 L 365 460 L 290 430 Z" fill="url(#garmentGrad)" />
+  <!-- Fold lines / subtle crease details -->
+  <path d="M 410 320 Q 450 350 490 320" stroke="#333333" stroke-width="2" fill="none" opacity="0.6" />
+  <path d="M 425 400 Q 460 440 480 400" stroke="#333333" stroke-width="2" fill="none" opacity="0.5" />
+  <path d="M 415 500 Q 450 530 485 500" stroke="#333333" stroke-width="2" fill="none" opacity="0.5" />
+  
+  <!-- Neck / Collarbone -->
+  <path d="M 415 250 Q 450 270 485 250 L 480 180 L 420 180 Z" fill="url(#skinTone)" />
+  <!-- Collar Rib -->
+  <path d="M 415 245 Q 450 270 485 245 Q 450 280 415 245 Z" fill="#2E2E2E" />
+
+  <!-- Arms -->
+  <path d="M 290 430 L 265 540 L 305 550 L 335 440 Z" fill="url(#skinTone)" />
+  <path d="M 610 430 L 635 540 L 595 550 L 565 440 Z" fill="url(#skinTone)" />
+
+  <!-- Head & Hairstyle -->
+  <path d="M 415 170 Q 410 85 450 85 Q 490 85 485 170 Q 450 205 415 170 Z" fill="url(#skinTone)" />
+  <!-- Modern Hair Cut -->
+  <path d="M 410 130 Q 405 70 450 65 Q 495 70 490 130 Q 470 95 450 95 Q 430 95 410 130 Z" fill="#1C1816" />
+
+  <!-- Crossbody Bag Accessory -->
+  <path d="M 370 250 L 530 480 L 500 500 L 340 270 Z" fill="#181818" />
+  <rect x="470" y="440" width="80" height="95" rx="10" fill="#222222" stroke="#383838" stroke-width="2" transform="rotate(-15 470 440)" />
+
+  <!-- Subtle Editorial Watermark Overlay -->
+  <text x="850" y="1040" font-family="-apple-system, sans-serif" font-weight="800" font-size="28" fill="#111111" opacity="0.35" text-anchor="end" letter-spacing="0.2em">LOOPNI • 2026</text>
+  <text x="50" y="1040" font-family="-apple-system, sans-serif" font-weight="600" font-size="14" fill="#111111" opacity="0.5" letter-spacing="0.1em">LOOKBOOK 01 / GUWAHATI &amp; ASSAM</text>
+</svg>

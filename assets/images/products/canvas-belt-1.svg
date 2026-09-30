@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" width="800" height="1000">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F6F5F1" />
+      <stop offset="100%" stop-color="#E9E6DC" />
+    </linearGradient>
+    <linearGradient id="prodGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#262624" />
+      <stop offset="100%" stop-color="#1A1A18" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="125%">
+      <feDropShadow dx="0" dy="18" stdDeviation="22" flood-color="#1A1814" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+  
+  <!-- Canvas Background -->
+  <rect width="800" height="1000" fill="url(#bgGrad)" />
+  
+  <!-- Subtle Studio Grid -->
+  <line x1="60" y1="60" x2="740" y2="60" stroke="#DFDBD0" stroke-width="1" />
+  <line x1="60" y1="940" x2="740" y2="940" stroke="#DFDBD0" stroke-width="1" />
+
+  <!-- Editorial Metadata -->
+  <text x="70" y="95" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="700" letter-spacing="0.16em" fill="#8C887E">LOOPNI / COLLECTION 01</text>
+  <text x="730" y="95" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="700" letter-spacing="0.18em" fill="#8C887E" text-anchor="end">FRONT VIEW</text>
+
+  <!-- Product Silhouette Render Based on Type -->
+  <g filter="url(#shadow)">
+    
+      <!-- Tactical Belt Coil & Buckle -->
+      <path d="M 240 500 Q 240 340 400 340 Q 560 340 560 500 Q 560 640 400 640 Q 280 640 280 520" stroke="url(#prodGrad)" stroke-width="42" fill="none" stroke-linecap="round" />
+      <rect x="360" y="315" width="85" height="52" rx="6" fill="#151515" stroke="#444" stroke-width="3" />
+      <rect x="375" y="332" width="55" height="18" rx="2" fill="#2E2E2E" />
+    
+  </g>
+
+  <!-- Bottom Spec Tag -->
+  <rect x="70" y="875" width="660" height="50" rx="8" fill="#FFFFFF" fill-opacity="0.85" stroke="#DFDBD0" stroke-width="1" />
+  <text x="95" y="906" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="14" font-weight="700" fill="#222222" letter-spacing="0.04em">Oxidized black clamp buckle</text>
+  <text x="705" y="906" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="500" fill="#777777" text-anchor="end">High-Tensile Woven Webbing</text>
+</svg>
