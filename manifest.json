@@ -1,0 +1,27 @@
+{
+  "name": "Loopni",
+  "short_name": "Loopni",
+  "description": "Loopni — Clothing & Accessories",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#FAF9F6",
+  "theme_color": "#111111",
+  "icons": [
+    {
+      "src": "assets/images/branding/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/images/branding/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/images/branding/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}
