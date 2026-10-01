@@ -1,5 +1,14 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100" fill="none">
-  <rect width="100" height="100" rx="20" fill="#111111" />
-  <text x="50" y="65" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-weight="900" font-size="52" fill="#FFFFFF" text-anchor="middle" letter-spacing="-0.02em">L</text>
-  <circle cx="72" cy="36" r="6" fill="#F4511E" />
+  <rect width="100" height="100" rx="24" fill="#0F0F11" />
+  <g transform="translate(10, 10) scale(0.8)">
+    <g fill="none" stroke="#FFFFFF" stroke-width="8.5" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Loop 1 (L-side continuous chamber) -->
+    <path d="M 48 20 C 32 20 22 32 22 50 C 22 68 34 80 50 80 C 64 80 72 70 72 58 C 72 48 66 38 56 30" />
+    <path d="M 44 22 C 40 24 36 28 34 34" />
+    
+    <!-- Loop 2 (N-side continuous chamber) -->
+    <path d="M 52 80 C 68 80 78 68 78 50 C 78 32 66 20 50 20 C 36 20 28 30 28 42 C 28 52 34 62 44 70" />
+    <path d="M 56 78 C 60 76 64 72 66 66" />
+  </g>
+  </g>
 </svg>

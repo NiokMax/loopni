@@ -299,7 +299,22 @@ main {
 .brand-logo-link {
   display: flex;
   align-items: center;
+  gap: 10px;
   text-decoration: none;
+}
+
+.brand-logo-mark {
+  width: 28px;
+  height: 28px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: transform var(--transition-fast);
+}
+
+.brand-logo-link:hover .brand-logo-mark {
+  transform: rotate(-6deg) scale(1.06);
 }
 
 .brand-logo-text {
@@ -2100,20 +2115,77 @@ main {
   margin-top: 40px;
 }
 
+.founder-card-layout {
+  display: flex;
+  gap: 28px;
+  align-items: flex-start;
+}
+
+@media (max-width: 640px) {
+  .founder-card-layout {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+.founder-avatar-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  flex-shrink: 0;
+}
+
+.founder-avatar {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--color-surface);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+  background-color: var(--color-surface-subtle);
+}
+
+.founder-social-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #E1306C;
+  background-color: rgba(225, 48, 108, 0.08);
+  border: 1px solid rgba(225, 48, 108, 0.2);
+  padding: 5px 12px;
+  border-radius: 20px;
+  text-decoration: none;
+  transition: all var(--transition-fast);
+}
+
+.founder-social-badge:hover {
+  background-color: #E1306C;
+  color: #FFFFFF;
+}
+
+.founder-bio-wrap {
+  flex: 1;
+}
+
 .founder-title {
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   font-weight: 850;
   color: var(--color-primary);
-  margin-bottom: 6px;
+  margin-bottom: 4px;
 }
 
 .founder-role {
+  display: block;
   font-size: 0.88rem;
   font-weight: 700;
   letter-spacing: 0.08em;
   color: var(--color-accent);
   text-transform: uppercase;
-  margin-bottom: 18px;
+  margin-bottom: 16px;
 }
 
 /* --- Contact Page Form --- */
@@ -2343,12 +2415,22 @@ textarea.form-control {
 }
 
 .footer-logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
   font-size: 1.8rem;
   font-weight: 900;
   letter-spacing: 0.16em;
   color: #FFFFFF;
   margin-bottom: 12px;
   text-transform: uppercase;
+}
+
+.footer-logo-mark {
+  width: 28px;
+  height: 28px;
+  filter: brightness(0) invert(1);
+  display: inline-flex;
 }
 
 .footer-tagline {

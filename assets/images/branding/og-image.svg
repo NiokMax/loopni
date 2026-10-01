@@ -1,32 +1,58 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
   <defs>
-    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#F7F6F2" />
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F9F8F5" />
       <stop offset="100%" stop-color="#EAE7DF" />
     </linearGradient>
-    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#1A1A1A" />
-      <stop offset="100%" stop-color="#0D0D0D" />
-    </linearGradient>
+    <filter id="cardShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="16" stdDeviation="24" flood-color="#000000" flood-opacity="0.08" />
+    </filter>
   </defs>
-  <rect width="1200" height="630" fill="url(#bg)" />
-  <rect x="80" y="80" width="1040" height="470" rx="24" fill="#FFFFFF" stroke="#E2DFD6" stroke-width="2" />
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bgGrad)" />
+
+  <!-- Outer Architectural Framing -->
+  <rect x="70" y="60" width="1060" height="510" rx="28" fill="#FFFFFF" stroke="#E2DFD6" stroke-width="2" filter="url(#cardShadow)" />
+
+  <!-- Left: Content Information -->
+  <!-- Pre-Launch Badge -->
+  <rect x="130" y="125" width="140" height="34" rx="17" fill="#0F0F11" />
+  <text x="200" y="147" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle" letter-spacing="0.16em">PRE-LAUNCH</text>
+
+  <!-- Brand Title -->
+  <text x="130" y="245" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="82" font-weight="900" fill="#0F0F11" letter-spacing="0.18em">LOOPNI</text>
   
-  <rect x="130" y="130" width="120" height="32" rx="16" fill="#111111" />
-  <text x="190" y="151" font-family="sans-serif" font-size="13" font-weight="700" fill="#FFFFFF" text-anchor="middle" letter-spacing="0.12em">PRE-LAUNCH</text>
+  <!-- Slogan -->
+  <text x="130" y="315" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="34" font-weight="700" fill="#3A3834" letter-spacing="0.04em">EVERYDAY STYLE. YOUR WAY.</text>
   
-  <text x="130" y="240" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="76" font-weight="900" fill="#111111" letter-spacing="0.14em">LOOPNI</text>
-  <text x="130" y="300" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="34" font-weight="700" fill="#444444" letter-spacing="0.02em">EVERYDAY STYLE. YOUR WAY.</text>
-  
-  <text x="130" y="365" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="22" font-weight="400" fill="#666666">
-    Clothing &amp; Accessories Made for Everyday Expression
+  <!-- Description -->
+  <text x="130" y="380" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="20" font-weight="400" fill="#6B6861">
+    Clothing, Fashion &amp; Accessories from Assam, India
   </text>
-  <text x="130" y="400" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="20" font-weight="500" fill="#888888">
-    Founded by Mayur Bikash Gogoi • Assam, India • Shipping Across India Soon
+  <text x="130" y="415" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="18" font-weight="500" fill="#8C887E">
+    Founded by Mayur Bikash Gogoi • Launching Soon
   </text>
 
-  <rect x="130" y="445" width="220" height="50" rx="8" fill="#111111" />
-  <text x="240" y="476" font-family="sans-serif" font-size="16" font-weight="700" fill="#FFFFFF" text-anchor="middle" letter-spacing="0.08em">EXPLORE STORE</text>
-  
-  <text x="1070" y="520" font-family="monospace" font-size="18" font-weight="600" fill="#999999" text-anchor="end">loopni.shop</text>
+  <!-- Domain Tag -->
+  <rect x="130" y="465" width="220" height="42" rx="21" fill="#FAF9F6" stroke="#E2DFD6" stroke-width="1.5" />
+  <circle cx="152" cy="486" r="4.5" fill="#E85A37" />
+  <text x="168" y="492" font-family="monospace" font-size="16" font-weight="700" fill="#0F0F11" letter-spacing="0.05em">loopni.shop</text>
+
+  <!-- Right: Large Minimalist Brand Emblem -->
+  <g transform="translate(800, 155) scale(3.0)">
+    <!-- Dark Circular Emblem Pod -->
+    <rect width="100" height="100" rx="26" fill="#0F0F11" />
+    <g transform="translate(10, 10) scale(0.8)">
+      <g fill="none" stroke="#FFFFFF" stroke-width="8" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Loop 1 (L-side continuous chamber) -->
+    <path d="M 48 20 C 32 20 22 32 22 50 C 22 68 34 80 50 80 C 64 80 72 70 72 58 C 72 48 66 38 56 30" />
+    <path d="M 44 22 C 40 24 36 28 34 34" />
+    
+    <!-- Loop 2 (N-side continuous chamber) -->
+    <path d="M 52 80 C 68 80 78 68 78 50 C 78 32 66 20 50 20 C 36 20 28 30 28 42 C 28 52 34 62 44 70" />
+    <path d="M 56 78 C 60 76 64 72 66 66" />
+  </g>
+    </g>
+  </g>
 </svg>
