@@ -260,4 +260,3 @@ To ensure that searching *"who is the owner of loopni"*, *"loopni founder"*, or 
 3. **Structured FAQ Schema:** `faq.html` contains explicit Q&A with matching `FAQPage` JSON-LD schema.
 4. **Site-Wide Footer Citation:** Every page carries a footer link: *"Founded & owned by Mayur Bikash Gogoi"*.
 
-# asd
