@@ -1,4 +1,9 @@
-<!DOCTYPE html>
+const fs = require('fs');
+const path = require('path');
+
+const rootDir = path.join(__dirname, '..');
+
+const presentationHtml = `<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -293,4 +298,7 @@
     </div>
   </div>
 </body>
-</html>
+</html>`;
+
+fs.writeFileSync(path.join(rootDir, 'brand-presentation.html'), presentationHtml);
+console.log('✓ brand-presentation.html updated with Google search preview!');

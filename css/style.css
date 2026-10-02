@@ -304,12 +304,13 @@ main {
 }
 
 .brand-logo-mark {
-  width: 28px;
-  height: 28px;
+  width: 32px;
+  height: 32px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
+  object-fit: contain;
   transition: transform var(--transition-fast);
 }
 
@@ -2429,8 +2430,8 @@ textarea.form-control {
 .footer-logo-mark {
   width: 28px;
   height: 28px;
-  filter: brightness(0) invert(1);
   display: inline-flex;
+  object-fit: contain;
 }
 
 .footer-tagline {
